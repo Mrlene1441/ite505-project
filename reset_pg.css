@@ -1,0 +1,26 @@
+/* Structural Styles*/
+header, footer, nav{display: block;}
+
+/*Typographic Styles*/
+body, header, h1, h2, html, nav, ul, li, p, footer{
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/*Removing the list markers*/
+nav ul{
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+/*Add single space to the body*/
+body{
+    line-height: 1;
+}

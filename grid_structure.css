@@ -1,0 +1,28 @@
+/*Grid rows style*/
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+/*div{
+    outline: black solid 2px;
+}*/
+
+/*Size of the columms*/
+div.col-1-2 {
+    width: 50%;
+}
+
+div.col-1-1 {
+    width: 100%;
+}
+
