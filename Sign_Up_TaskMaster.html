@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8" />
+    <meta name="keywords" content="task manager, ADD MORE THINGS" />
+    <title> Sign Up Page </title>
+    <link rel="stylesheet" href="reset_pg.css" type="text/css" />
+    <link href="grid_structure.css" rel="stylesheet" type="text/css" />
+    <link href="TaskMaster_General.css" rel="stylesheet" type="text/css" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+</head>
+
+<!--Home Page before log in-->
+<body>
+    <div class="row">
+        <div class="col-1-1">
+            <header> 
+                <h1><a href="">Task Master</a></h1>
+            </header>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-1-1">
+            <hr class="divider">
+            <h5 class="title">Sign Up</h1>
+            <p class="note">Create your personal account.</p>
+        </div>
+    </div>
+
+    <!--Form-->
+<form class="signup" action="SignUpAction.php" method="POST">
+    <div class="row">
+        <div class="col-1-1">
+
+            <div class="name-container">
+                <div class="input-box">
+                    <label class="name" for="name"><b>First Name</b></label>
+                    <input class="name" type="text" name="name" required>
+                </div>
+            
+                <div class="input-box">
+                    <label class="name" for="lastname"><b>Last Name</b></label>
+                    <input class="name" type="text" name="lastname" required>
+                </div>
+            </div>
+
+            <label class="other" for="email"><b>Email</b></label>
+            <input class="other" type="text" name="email" required>
+
+            <label class="other" for="psw"><b>Password</b></label>
+            <input class="other" type="password" name="psw" required>
+
+            <label class="other" for="psw-repeat"><b>Repeat Password</b></label>
+            <input class="other" type="password" name="psw-repeat" required>
+
+            <!--Remember me checkbox-->
+            <label class="other">
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+    <!--Footer-->
+    <div class="row">
+        <div class="col-1-1">
+            <footer>
+                <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+                <script>
+                    // optional init
+                    window.onload = function() {
+                    window.micAccessTool = new MicAccessTool({
+                    link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
+                    contact: 'ChangeEmail.com',
+                    buttonPosition: 'right', // default is 'left'
+                    forceLang: 'en' // default is 'en' may be 'he-IL', 'ru-RU', or 'fr_FR'
+                        });
+                    }
+                </script>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
